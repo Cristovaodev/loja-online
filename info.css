@@ -17,7 +17,7 @@ header{
   height: 72%;
   background-color: #fff;
   border: 0px solid black;
-  background-image: url('../bg8.jpg');
+  background-image: url('/bg8.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   color: rgba(0, 0, 0, 1);
