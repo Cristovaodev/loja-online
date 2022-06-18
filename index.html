@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="menu.css" type="text/css" media="all" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <script src="index.js"></script>
+  <script type="text/javascript" charset="utf-8"></script>
+  <title>Homepage</title>
+</head>
+<body id="log">
+
+  <header>
+    <div class="cabecalho">
+      <h1></h1>
+    </div>
+    <div class="menu">
+      <div id="logo">
+        <img class="logo" src="logo.png" alt="logo" />
+      </div>
+
+      <nav>
+        <div class="abas">
+          <a class="aba" href="index.html">Home</a>
+          <a class="aba" href="info.html">Info</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="principal">
+    <section class="cliente">
+      <h2 class="h2">Contacto</h2>
+      <input type="text" id="nome" placeholder="Seu Nome" oninput="nome();" />
+      <input type="tel" id="contacto" placeholder="Seu Número" oninput="nome();" />
+    </section>
+    <h2 class="compre">Compre já 🛒</h2>
+    <section class="produto">
+      <img class="imagem_do_produto" src="frango-caprese.jpg" alt="amostra do produto" /><br />
+      <div id="npedido1" class="npedido">Frango caprese</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir1" type="button" onclick="diminuir1();">-</button>
+        <button class="quantidade" id="quantidade1" type="button">1</button>
+        <button class="aumentar" id="aumentar1" type="button" onclick="adicionar1();">+</button>
+        <button id="total1" class="preco_total">5R$</button>
+        <button class="pedir" type="button" onclick="pedir('1')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="canelone-de-ricota-facil.jpg" alt="amostra do produto" /><br /><div id="npedido2" class="npedido">Canelone de ricota</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir2" type="button" onclick="diminuir2();">-</button>
+        <button class="quantidade" id="quantidade2" type="button">1</button>
+        <button class="aumentar" id="aumentar2" type="button" onclick="adicionar2();">+</button>
+        <button id="total2" class="preco_total">6R$</button>
+        <button class="pedir" type="button" onclick="pedir('2')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="carne-seca-na-moranga.png" alt="amostra do produto" /><br /><div id="npedido3" class="npedido">Carne seca na moranga</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir3" type="button" onclick="diminuir3();">-</button>
+        <button class="quantidade" id="quantidade3" type="button">1</button>
+        <button class="aumentar" id="aumentar3" type="button" onclick="adicionar3();">+</button>
+        <button id="total3" class="preco_total">4R$</button>
+        <button class="pedir" type="button" onclick="pedir('3')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="salmao-curado.jpg" alt="amostra do produto" /><br /><div id="npedido4" class="npedido">Salmão curado</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir4" type="button" onclick="diminuir4();">-</button>
+        <button class="quantidade" id="quantidade4" type="button">1</button>
+        <button class="aumentar" id="aumentar4" type="button" onclick="adicionar4();">+</button>
+        <button id="total4" class="preco_total">6R$</button>
+        <button class="pedir" type="button" onclick="pedir('4')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="costelinha-com-molho-barbecue.jpg" alt="amostra do produto" /><br /><div id="npedido5" class="npedido">Costelinha com molho barbecue</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir5" type="button" onclick="diminuir5();">-</button>
+        <button class="quantidade" id="quantidade5" type="button">1</button>
+        <button class="aumentar" id="aumentar5" type="button" onclick="adicionar5();">+</button>
+        <button id="total5" class="preco_total">5R$</button>
+        <button class="pedir" type="button" onclick="pedir('5')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="ensopado-de-cordeiro-com-molho-de-vinho.jpg" alt="amostra do produto" /><br /><div id="npedido6" class="npedido">Carne de cordeiro com molho de vinho</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir6" type="button" onclick="diminuir6();">-</button>
+        <button class="quantidade" id="quantidade6" type="button">1</button>
+        <button class="aumentar" id="aumentar6" type="button" onclick="adicionar6();">+</button>
+        <button id="total6" class="preco_total">8R$</button>
+        <button class="pedir" type="button" onclick="pedir('6')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="lombo-assado-com-legumes.png" alt="amostra do produto" /><br /><div id="npedido7" class="npedido">Lombo assado com legumes</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir7" type="button" onclick="diminuir7();">-</button>
+        <button class="quantidade" id="quantidade7" type="button">1</button>
+        <button class="aumentar" id="aumentar7" type="button" onclick="adicionar7();">+</button>
+        <button id="total7" class="preco_total">6R$</button>
+        <button class="pedir" type="button" onclick="pedir('7')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="macarrao-caprese-facil.jpg" alt="amostra do produto" /><br /><div id="npedido8" class="npedido">Macarrão caprese</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir8" type="button" onclick="diminuir8();">-</button>
+        <button class="quantidade" id="quantidade8" type="button">1</button>
+        <button class="aumentar" id="aumentar8" type="button" onclick="adicionar8();">+</button>
+        <button id="total8" class="preco_total">7R$</button>
+        <button class="pedir" type="button" onclick="pedir('8')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="peixe-assado-com-legumes.jpg" alt="amostra do produto" /><br /><div id="npedido9" class="npedido">Peixe assado com legumes</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir9" type="button" onclick="diminuir9();">-</button>
+        <button class="quantidade" id="quantidade9" type="button">1</button>
+        <button class="aumentar" id="aumentar9" type="button" onclick="adicionar9();">+</button>
+        <button id="total9" class="preco_total">5R$</button>
+        <button class="pedir" type="button" onclick="pedir('9')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="empadinha-de-brocolis-e-palmito.jpg" alt="amostra do produto" /><br /><div id="npedido10" class="npedido">Empadinha de brocolis e palmito</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir10" type="button" onclick="diminuir10();">-</button>
+        <button class="quantidade" id="quantidade10" type="button">1</button>
+        <button class="aumentar" id="aumentar10" type="button" onclick="adicionar10();">+</button>
+        <button id="total10" class="preco_total">8R$</button>
+        <button class="pedir" type="button" onclick="pedir('10')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="lasanha-de-berinjela-e-abobrinha.jpg" alt="amostra do produto" /><br /><div id="npedido11" class="npedido">Lasanha de berinjela e abobrinha</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir11" type="button" onclick="diminuir11();">-</button>
+        <button class="quantidade" id="quantidade11" type="button">1</button>
+        <button class="aumentar" id="aumentar11" type="button" onclick="adicionar11();">+</button>
+        <button id="total11" class="preco_total">4R$</button>
+        <button class="pedir" type="button" onclick="pedir('11')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="lasanha-de-frango-de-frigideira.jpg" alt="amostra do produto" /><br /><div id="npedido12" class="npedido">Lasanha de frango de frigideira</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir12" type="button" onclick="diminuir12();">-</button>
+        <button class="quantidade" id="quantidade12" type="button">1</button>
+        <button class="aumentar" id="aumentar12" type="button" onclick="adicionar12();">+</button>
+        <button id="total12" class="preco_total">4R$</button>
+        <button class="pedir" type="button" onclick="pedir('12')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="panqueca-de-carne-moida-capa.jpg" alt="amostra do produto" /><br /><div id="npedido13" class="npedido">Panqueca de carne moida</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir13" type="button" onclick="diminuir13();">-</button>
+        <button class="quantidade" id="quantidade13" type="button">1</button>
+        <button class="aumentar" id="aumentar13" type="button" onclick="adicionar13();">+</button>
+        <button id="total13" class="preco_total">6R$</button>
+        <button class="pedir" type="button" onclick="pedir('13')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="panqueca-de-frango-com-requeijao.jpg" alt="amostra do produto" /><br /><div id="npedido14" class="npedido">Panqueca de frango com requeijão</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir14" type="button" onclick="diminuir14();">-</button>
+        <button class="quantidade" id="quantidade14" type="button">1</button>
+        <button class="aumentar" id="aumentar14" type="button" onclick="adicionar14();">+</button>
+        <button id="total14" class="preco_total">7R$</button>
+        <button class="pedir" type="button" onclick="pedir('14')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="salada-de-lentilha-facil.jpg" alt="amostra do produto" /><br /><div id="npedido15" class="npedido">Salada de lentilha</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir15" type="button" onclick="diminuir15();">-</button>
+        <button class="quantidade" id="quantidade15" type="button">1</button>
+        <button class="aumentar" id="aumentar15" type="button" onclick="adicionar15();">+</button>
+        <button id="total15" class="preco_total">5R$</button>
+        <button class="pedir" type="button" onclick="pedir('15')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="salada-coreana-de-pepino.jpg" alt="amostra do produto" /><br /><div id="npedido16" class="npedido">Salada coreana de pepino</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir16" type="button" onclick="diminuir16();">-</button>
+        <button class="quantidade" id="quantidade16" type="button">1</button>
+        <button class="aumentar" id="aumentar16" type="button" onclick="adicionar16();">+</button>
+        <button id="total16" class="preco_total">8R$</button>
+        <button class="pedir" type="button" onclick="pedir('16')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="risoto-de-camarao.jpg" alt="amostra do produto" /><br /><div id="npedido17" class="npedido">Risoto de camarão</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir17" type="button" onclick="diminuir17();">-</button>
+        <button class="quantidade" id="quantidade17" type="button">1</button>
+        <button class="aumentar" id="aumentar17" type="button" onclick="adicionar17();">+</button>
+        <button id="total17" class="preco_total">7R$</button>
+        <button class="pedir" type="button" onclick="pedir('17')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="nhoque-recheado-com-queijo.jpg" alt="amostra do produto" /><br /><div id="npedido18" class="npedido">Nhoque recheado com queijo</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir18" type="button" onclick="diminuir18();">-</button>
+        <button class="quantidade" id="quantidade18" type="button">1</button>
+        <button class="aumentar" id="aumentar18" type="button" onclick="adicionar18();">+</button>
+        <button id="total18" class="preco_total">9R$</button>
+        <button class="pedir" type="button" onclick="pedir('18')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="quiche-de-milho-e-bacon.jpg" alt="amostra do produto" /><br /><div id="npedido19" class="npedido">Quiche de milho e bacon</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir19" type="button" onclick="diminuir19();">-</button>
+        <button class="quantidade" id="quantidade19" type="button">1</button>
+        <button class="aumentar" id="aumentar19" type="button" onclick="adicionar19();">+</button>
+        <button id="total19" class="preco_total">4R$</button>
+        <button class="pedir" type="button" onclick="pedir('19')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="ravioli-sem-gluten-pratico.jpg" alt="amostra do produto" /><br /><div id="npedido20" class="npedido">Ravioli sem gluten</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir20" type="button" onclick="diminuir20();">-</button>
+        <button class="quantidade" id="quantidade20" type="button">1</button>
+        <button class="aumentar" id="aumentar20" type="button" onclick="adicionar20();">+</button>
+        <button id="total20" class="preco_total">7R$</button>
+        <button class="pedir" type="button" onclick="pedir('20')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="canapes-de-pao-de-queijo.jpg" alt="amostra do produto" /><br /><div id="npedido21" class="npedido">Canapes de pão de queijo</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir21" type="button" onclick="diminuir21();">-</button>
+        <button class="quantidade" id="quantidade21" type="button">1</button>
+        <button class="aumentar" id="aumentar21" type="button" onclick="adicionar21();">+</button>
+        <button id="total21" class="preco_total">6R$</button>
+        <button class="pedir" type="button" onclick="pedir('21')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="canapes-de-ricota-com-azeitona.jpg" alt="amostra do produto" /><br /><div id="npedido22" class="npedido">Canapes de ricota com azeitona</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir22" type="button" onclick="diminuir22();">-</button>
+        <button class="quantidade" id="quantidade22" type="button">1</button>
+        <button class="aumentar" id="aumentar22" type="button" onclick="adicionar22();">+</button>
+        <button id="total22" class="preco_total">9R$</button>
+        <button class="pedir" type="button" onclick="pedir('22')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="bruschetta-de-tomate.jpg" alt="amostra do produto" /><br /><div id="npedido23" class="npedido">Bruschetta de tomate</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir23" type="button" onclick="diminuir23();">-</button>
+        <button class="quantidade" id="quantidade23" type="button">1</button>
+        <button class="aumentar" id="aumentar23" type="button" onclick="adicionar23();">+</button>
+        <button id="total23" class="preco_total">5R$</button>
+        <button class="pedir" type="button" onclick="pedir('23')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="antepasto-de-berinjela-picante.jpg" alt="amostra do produto" /><br /><div id="npedido24" class="npedido">Antepasto de berinjela picante</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir24" type="button" onclick="diminuir24();">-</button>
+        <button class="quantidade" id="quantidade24" type="button">1</button>
+        <button class="aumentar" id="aumentar24" type="button" onclick="adicionar24();">+</button>
+        <button id="total24" class="preco_total">4R$</button>
+        <button class="pedir" type="button" onclick="pedir('24')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="banoffee-facil.jpg" alt="amostra do produto" /><br /><div id="npedido25" class="npedido">Banoffee</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir25" type="button" onclick="diminuir25();">-</button>
+        <button class="quantidade" id="quantidade25" type="button">1</button>
+        <button class="aumentar" id="aumentar25" type="button" onclick="adicionar25();">+</button>
+        <button id="total25" class="preco_total">8R$</button>
+        <button class="pedir" type="button" onclick="pedir('25')">Pedir🛒</button>
+      </div>
+    </section>
+
+    <section class="produto">
+      <img class="imagem_do_produto" src="brigadeirao-de-nutella-facil.jpg" alt="amostra do produto" /><br /><div id="npedido26" class="npedido">Brigadeirao de nutella</div>
+      <div id="compra" class="compra">
+        <button class="diminuir" id="diminuir26" type="button" onclick="diminuir26();">-</button>
+        <button class="quantidade" id="quantidade26" type="button">1</button>
+        <button class="aumentar" id="aumentar26" type="button" onclick="adicionar26();">+</button>
+        <button id="total26" class="preco_total">6R$</button>
+        <button class="pedir" type="button" onclick="pedir('26')">Pedir🛒</button>
+      </div>
+    </section>
+
+  </section>
+  <footer>
+    2022 = Copyright&copy;
+    <a href="#log">️️&nbsp;⬆&nbsp;</a>
+  </footer>
+  
+</body>
+</html>

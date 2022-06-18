@@ -1,0 +1,239 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: arial;
+  font-size: 15px;
+}
+
+header{
+  width: 100%;
+  height: 180px;
+}
+
+.cabecalho{
+  margin: 0 auto;
+  width: 100%;
+  height: 72%;
+  background-color: #fff;
+  border: 0px solid black;
+  background-image: url('../bg8.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(0, 0, 0, 1);
+}
+  
+#logo{
+  margin-top: -45px;
+  margin-left: 6px;
+  width: 90px;
+  height: 90px;
+}
+.logo{
+  background: white;
+  width: 90px;
+}
+
+.h2{
+  margin-top: 12px;
+  margin-left: 8px;
+  font-size: 25px;
+  margin-bottom: -10px;
+}
+
+.cliente {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.info, .termos{
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+}
+  
+  .compre{
+  font-size: 25px;
+  margin-bottom: -15px;
+  width: 100%;
+  text-align: center;
+}
+  
+.principal{
+  width: 100%;
+  background: #3a48ffb3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+#nome{
+  margin: 15px 0px 4px 6px;
+  width: 180px;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 6px;
+  font-size: 15px;
+}
+
+#contacto{
+  margin: 8px 0px 8px 6px;
+  width: 160px;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 6px;
+  font-size: 15px;
+}
+
+.produto{
+  background: #ce5a5a;
+  width: 86%;
+  height: 225px;
+  border-radius: 5px;
+  margin-top: 30px;
+  color: white;
+}
+
+.imagem_do_produto{
+  width: 100%;
+  height: 163px;
+  border: 0px solid;
+  border-bottom: 2px solid green;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.npedido{
+  margin-top: -5px;
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 14px;
+  background: linear-gradient(to bottom, brown, #ce5a5a);
+  height: 30px;
+}
+
+.compra{
+  display: flex;
+}
+
+.diminuir, .aumentar{
+  width: 25px;
+  height: 30px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: none;
+  border-right: none;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.diminuir{
+  margin-left: 5px;
+  border-left: 1px solid;
+}
+
+.quantidade{
+  background: transparent;
+  width: 35px;
+  height: 30px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: none;
+  border-right: none;
+  color: white;
+  border-color: black;
+}
+
+.preco_total{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: none;
+  border-right: 1px solid;
+  background: transparent;
+  padding: 2px;
+  color: white;
+  border-color: black;
+}
+
+.pedir{
+  width: 72px;
+  height: 30px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+a[href="#log"]:link,
+a[href="#log"]:visited,
+a[href="#log"]:hover,
+a[href="#log"]:focus,
+a[href="#log"]:active
+{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  text-align: center;
+  background: #ffffff;
+  color: blue;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid grey;
+  border-radius: 100px;
+  font-size: 50px;
+  font-weight: 900;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+@media (min-width: 1051px) and (max-width: 3500px){
+  .principal{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .produto{
+    width: 21%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1050px){
+  .principal{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .produto{
+    width: 27%;
+    margin-left: 2.2%;
+    margin-right: 2.2%;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px){
+  .principal{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .produto{
+    width: 45.5%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+}

@@ -1,0 +1,99 @@
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+nav {
+  margin-top: 14px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+.abas {
+  text-align: right;
+  padding-right: 5px;
+  width: 100%;
+  height: 30px;
+  padding-top: 0px;
+  background: black;
+  color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  word-spacing: 5px;
+}
+
+.aba {
+  font-size: 18px;
+  display: inline;
+  text-decoration: none;
+  border: 2px solid blue;
+  border-radius: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 0px;
+}
+
+.aba:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.aba:active {
+  border: 4px solid blue;
+  border-radius: 40px;
+  padding: 2px 5px 2px 5px;
+  color: black;
+  -webkit-text-fill-color: none;
+}
+
+
+@media (min-width: 1051px) and (max-width: 3500px) {
+  .abas {
+    padding-right: 65px;
+    word-spacing: 24px;
+  }
+  .aba {
+    font-size: 18px;
+    display: inline;
+    text-decoration: none;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1050px) {
+  .abas {
+    padding-right: 60px;
+    word-spacing: 20px;
+  }
+  .aba {
+    font-size: 18px;
+    display: inline;
+    text-decoration: none;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .abas {
+    padding-right: 30px;
+    word-spacing: 12px;
+  }
+  .aba {
+    font-size: 18px;
+    display: inline;
+    text-decoration: none;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
