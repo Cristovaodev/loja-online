@@ -1,0 +1,130 @@
+jsonData = [{
+  "nome": "Frango caprese",
+  "img": "./img/frango-caprese.jpg",
+  "preco": "5"
+},
+  {
+    "nome": "Canelone de ricota",
+    "img": "./img/canelone-de-ricota-facil.jpg",
+    "preco": "6"
+  },
+  {
+    "nome": "Carne seca na moranga",
+    "img": "./img/carne-seca-na-moranga.png",
+    "preco": "4"
+  },
+  {
+    "nome": "Salmão curado",
+    "img": "./img/salmao-curado.jpg",
+    "preco": "6"
+  },
+  {
+    "nome": "Costelinha com molho barbecue",
+    "img": "./img/costelinha-com-molho-barbecue.jpg",
+    "preco": "5"
+  },
+  {
+    "nome": "Carne de cordeiro com molho de vinho",
+    "img": "./img/ensopado-de-cordeiro-com-molho-de-vinho.jpg",
+    "preco": "8"
+  },
+  {
+    "nome": "Lombo assado com legumes",
+    "img": "./img/lombo-assado-com-legumes.png",
+    "preco": "6"
+  },
+  {
+    "nome": "Macarrão caprese",
+    "img": "./img/macarrao-caprese-facil.jpg",
+    "preco": "7"
+  },
+  {
+    "nome": "Peixe assado com legumes",
+    "img": "./img/peixe-assado-com-legumes.jpg",
+    "preco": "5"
+  },
+  {
+    "nome": "Empadinha de brocolis e palmito",
+    "img": "./img/empadinha-de-brocolis-e-palmito.jpg",
+    "preco": "8"
+  },
+  {
+    "nome": "Lasanha de berinjela e abobrinha",
+    "img": "./img/lasanha-de-berinjela-e-abobrinha.jpg",
+    "preco": "4"
+  },
+  {
+    "nome": "Lasanha de frango de frigideira",
+    "img": "./img/lasanha-de-frango-de-frigideira.jpg",
+    "preco": "4"
+  },
+  {
+    "nome": "Panqueca de carne moida",
+    "img": "./img/panqueca-de-carne-moida-capa.jpg",
+    "preco": "6"
+  },
+  {
+    "nome": "Panqueca de frango com requeijão",
+    "img": "./img/panqueca-de-frango-com-requeijao.jpg",
+    "preco": "7"
+  },
+  {
+    "nome": "Salada de lentilha",
+    "img": "./img/salada-de-lentilha-facil.jpg",
+    "preco": "5"
+  },
+  {
+    "nome": "Salada coreana de pepino",
+    "img": "./img/salada-coreana-de-pepino.jpg",
+    "preco": "8"
+  },
+  {
+    "nome": "Risoto de camarão",
+    "img": "./img/risoto-de-camarao.jpg",
+    "preco": "7"
+  },
+  {
+    "nome": "Nhoque recheado com queijo",
+    "img": "./img/nhoque-recheado-com-queijo.jpg",
+    "preco": "9"
+  },
+  {
+    "nome": "Quiche de milho e bacon",
+    "img": "./img/quiche-de-milho-e-bacon.jpg",
+    "preco": "4"
+  },
+  {
+    "nome": "Ravioli sem gluten",
+    "img": "./img/ravioli-sem-gluten-pratico.jpg",
+    "preco": "7"
+  },
+  {
+    "nome": "Canapes de pão de queijo",
+    "img": "./img/canapes-de-pao-de-queijo.jpg",
+    "preco": "6"
+  },
+  {
+    "nome": "Canapes de ricota com azeitona",
+    "img": "./img/canapes-de-ricota-com-azeitona.jpg",
+    "preco": "9"
+  },
+  {
+    "nome": "Bruschetta de tomate",
+    "img": "./img/bruschetta-de-tomate.jpg",
+    "preco": "5"
+  },
+  {
+    "nome": "Antepasto de berinjela picante",
+    "img": "./img/antepasto-de-berinjela-picante.jpg",
+    "preco": "4"
+  },
+  {
+    "nome": "Banoffee",
+    "img": "./img/banoffee-facil.jpg",
+    "preco": "8"
+  },
+  {
+    "nome": "Brigadeirao de nutella",
+    "img": "./img/brigadeirao-de-nutella-facil.jpg",
+    "preco": "6"
+  }]
