@@ -178,6 +178,7 @@ function criarElemento(index, container, nome, img, valor) {
   divAction.appendChild(cart);
 
   sectionProdut.setAttribute("class", "produto bg-gray-200");
+  sectionProdut.setAttribute("data-aos", "fade-right");
   name.setAttribute("class", "nome pt-2 mb-6");
   image.setAttribute("class", "imagemProduto");
   divAction.setAttribute("class", "accoes text-gray-600 mb-4");
@@ -337,7 +338,7 @@ function listar() {
   
   if(lista.length != 0) {
     for (var i = 0; i < lista.length; i++) {
-      elementos = elementos+"<li class='flex py-6'><div class='size-24 shrink-0 overflow-hidden rounded-md border border-gray-200'><img src='"+
+      elementos = elementos+"<li class='flex py-6'><div class='size-24 shrink-0 overflow-hidden rounded-md border border-gray-200' data-aos='fade-in'><img src='"+
       lista[i][1]+"' alt='"+lista[i][1]+"' class='size-full object-cover'></div><div class='ml-4 flex flex-1 flex-col'><div><div class='flex justify-between text-base font-medium text-gray-900'><h3><a href='#'>"+
       lista[i][0]+"</a></h3><p class='ml-4'>$"+
       (parseInt(lista[i][2])*parseInt(lista[i][3]))+".00</p></div><p class='mt-1 text-sm text-gray-500'></p></div><div class='flex flex-1 items-end justify-between text-sm'><p class='text-gray-500'>Qty "+
