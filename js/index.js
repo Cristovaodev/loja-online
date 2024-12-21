@@ -179,22 +179,22 @@ function criarElemento(index, container, nome, img, valor) {
 
   sectionProdut.setAttribute("class", "produto bg-gray-200");
   sectionProdut.setAttribute("data-aos", "fade-right");
-  name.setAttribute("class", "nome pt-2 mb-6");
+  name.setAttribute("class", "nome text-base mt-1 mb-4");
   image.setAttribute("class", "imagemProduto");
   divAction.setAttribute("class", "accoes text-gray-600 mb-4");
   remove.setAttribute("class", "diminuir text-gray-600 hover:bg-indigo-500");
   quant.setAttribute("class", "quantidade text-gray-600");
   add.setAttribute("class", "aumentar text-gray-600 hover:bg-indigo-500");
-  price.setAttribute("class", "preco_total text-gray-600");
+  price.setAttribute("class", "preco_total px-2 text-green-800 font-bold");
   cart.setAttribute("class", "pedir bg-indigo-500 rounded-md px-2 hover:bg-indigo-700 px-4");
 
   name.textContent = nome;
   image.src = img;
-  remove.textContent = "-";
+  remove.innerHTML = "<i class='fa-solid fa-minus'></i>";
   quant.textContent = "1";
-  add.textContent = "+";
-  price.textContent = valor+"R$";
-  cart.textContent = "add";
+  add.innerHTML = "<i class='fa-solid fa-plus'></i>";
+  price.textContent = "$"+valor;
+  cart.innerHTML = "<i class='fa-solid fa-cart-plus'></i>";
 
   remove.addEventListener("click", function() {
     index;
@@ -203,7 +203,7 @@ function criarElemento(index, container, nome, img, valor) {
     let quantidade = parseInt(document.getElementsByClassName('quantidade')[index].innerHTML);
     if (quantidade > 1) {
       document.getElementsByClassName('quantidade')[index].innerHTML = quantidade-1;
-      document.getElementsByClassName('preco_total')[index].innerHTML = (quantidade-1)*valor+"R$";
+      document.getElementsByClassName('preco_total')[index].innerHTML = "$"+((quantidade-1)*valor);
     } else if (quantidade == 1) {
       document.getElementsByClassName('quantidade')[index].innerHTML = 1;
     } else {
@@ -217,7 +217,7 @@ function criarElemento(index, container, nome, img, valor) {
       //alert(index);
       let quantidade = parseInt(document.getElementsByClassName('quantidade')[index].innerHTML);
   if (quantidade < 15) {
-    document.getElementsByClassName('preco_total')[index].innerHTML = (quantidade+1)*valor+"R$";
+    document.getElementsByClassName('preco_total')[index].innerHTML = "$"+((quantidade+1)*valor);
     document.getElementsByClassName('quantidade')[index].innerHTML = (quantidade+1);
   } else if (quantidade == 15) {
     document.getElementById('quantidade')[index].innerHTML = 15;
@@ -342,7 +342,7 @@ function listar() {
       lista[i][1]+"' alt='"+lista[i][1]+"' class='size-full object-cover'></div><div class='ml-4 flex flex-1 flex-col'><div><div class='flex justify-between text-base font-medium text-gray-900'><h3><a href='#'>"+
       lista[i][0]+"</a></h3><p class='ml-4'>$"+
       (parseInt(lista[i][2])*parseInt(lista[i][3]))+".00</p></div><p class='mt-1 text-sm text-gray-500'></p></div><div class='flex flex-1 items-end justify-between text-sm'><p class='text-gray-500'>Qty "+
-      lista[i][3]+"</p><div class='flex'><button type='button' class='font-medium text-indigo-600 hover:text-indigo-500' onclick='removeItem("+i+")'>Remover</button></div></div></div></li>" ;
+      lista[i][3]+"</p><div class='flex'><button type='button' class='font-medium text-red-600 hover:text-indigo-500' onclick='removeItem("+i+")'><i class='fa-solid fa-trash-can'></i></button></div></div></div></li>" ;
       //lista[i][0];lista[i][1];lista[i][2];lista[i][3];
       totalItem = (totalItem + (parseInt(lista[i][2])*parseInt(lista[i][3])));
     }
@@ -351,7 +351,7 @@ function listar() {
     
   }else{
     containerCart.textContent = "SEM NENHUM ITEM";
-    subtotal.textContent = "0.00R$";
+    subtotal.textContent = "$0.00";
     containerCart.className = "text-center";
   }
 }

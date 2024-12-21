@@ -88,7 +88,7 @@ header{
 }
 
 .diminuir{
-  margin-left: 5px;
+  margin-left: 8px;
   border-left: 1px solid;
 }
 
@@ -108,15 +108,12 @@ header{
   border-left: none;
   border-right: 1px solid;
   background: transparent;
-  padding: 2px;
   border-color: black;
 }
 
 .pedir{
   margin-left: 20px;
   font-weight: 600;
-  padding-left: 10px;
-  padding-right: 10px;
   color: #fefefe;
 }
 
