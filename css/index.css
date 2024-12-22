@@ -70,9 +70,6 @@ header{
 }
 
 .nome{
-  margin-top: -5px;
-  padding-top: 5px;
-  padding-left: 5px;
   font-size: 14px;
   height: 30px;
 }
@@ -92,7 +89,6 @@ header{
 }
 
 .diminuir{
-  margin-left: 8px;
   border-left: 1px solid;
 }
 

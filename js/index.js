@@ -179,9 +179,9 @@ function criarElemento(index, container, nome, img, valor) {
 
   sectionProdut.setAttribute("class", "produto bg-gray-200");
   sectionProdut.setAttribute("data-aos", "fade-right");
-  name.setAttribute("class", "nome text-base ml-3 mt-2 mb-4");
+  name.setAttribute("class", "nome text-sm ml-4 mt-4 pb-3");
   image.setAttribute("class", "imagemProduto");
-  divAction.setAttribute("class", "accoes text-gray-600 mb-4");
+  divAction.setAttribute("class", "accoes text-gray-600 ml-4 mb-4");
   remove.setAttribute("class", "diminuir text-gray-600 hover:bg-indigo-500");
   quant.setAttribute("class", "quantidade text-gray-600");
   add.setAttribute("class", "aumentar text-gray-600 hover:bg-indigo-500");
