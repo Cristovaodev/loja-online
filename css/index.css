@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: arial;
 }
+body {
+  background: #FAD4C0;
+  background: #EED8C9;
+}
 
 nav {
   z-index: 99;

@@ -179,7 +179,7 @@ function criarElemento(index, container, nome, img, valor) {
 
   sectionProdut.setAttribute("class", "produto bg-gray-200");
   sectionProdut.setAttribute("data-aos", "fade-right");
-  name.setAttribute("class", "nome text-base mt-1 mb-4");
+  name.setAttribute("class", "nome text-base ml-3 mt-2 mb-4");
   image.setAttribute("class", "imagemProduto");
   divAction.setAttribute("class", "accoes text-gray-600 mb-4");
   remove.setAttribute("class", "diminuir text-gray-600 hover:bg-indigo-500");
